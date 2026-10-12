@@ -71,6 +71,23 @@ My professional work focuses on designing and developing enterprise software sys
 
 ## 🚀 Selected Projects
 
+### 🔹 .NET Security Analyzer (Roslyn) — *In Progress*
+
+A software security research project in two stages:
+
+1. **Vulnerable target API** — a deliberately insecure ASP.NET Core banking-style API with hand-planted vulnerabilities, built as a realistic test target.
+2. **Roslyn security analyzer** — a static analysis tool built on the .NET Compiler Platform (Roslyn) that aims to detect those vulnerability patterns directly in C# source code.
+
+**Key areas:**
+- ASP.NET Core Web API
+- Secure coding and common web vulnerability classes
+- Static program analysis
+- Roslyn analyzers (C# syntax trees and semantic models)
+
+The goal is to explore how automated analysis can catch security defects earlier in the development process.
+
+---
+
 ### 🔹 RecWiz — Reconciliation Wizard
 
 An enterprise reconciliation platform designed for processing and comparing large financial datasets.
@@ -149,15 +166,17 @@ I am particularly interested in questions such as:
 - How can AI improve software testing and debugging?
 - How can we evaluate the correctness of AI-generated code?
 - How can vulnerabilities in generated code be detected automatically?
+- How can static analysis tools catch security defects before code reaches production?
 - How can software engineering practices improve AI-enabled systems?
 - How can AI-assisted development remain secure and maintainable?
-- How can automated analysis help developers identify software defects earlier?
 
 ---
 
 ## 📊 GitHub Activity
 
-![Saad's GitHub stats](https://github-readme-stats.vercel.app/api?username=pro777oy&show_icons=true&hide_border=true)
+<sub>Most of my public repositories live on my other account, [@pro777oy](https://github.com/pro777oy).</sub>
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=pro777oy&show_icons=true&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=pro777oy&layout=compact&hide_border=true)
 
@@ -165,10 +184,11 @@ I am particularly interested in questions such as:
 
 ## 🌐 Links
 
-- 🎓 [Academic Portfolio](https://pro777oy.github.io/saad-academic/)
-- 💻 [GitHub](https://github.com/pro777oy)
-- 🔗 LinkedIn
-- 📄 Curriculum Vitae
+- 🌐 [Portfolio Website](https://saadkabiruddin.github.io/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/saadkabiruddin)
+- 💻 [GitHub (projects)](https://github.com/pro777oy)
+<!-- - 🎓 [Google Scholar](PASTE_YOUR_SCHOLAR_URL_HERE) -->
+<!-- - 📄 [Curriculum Vitae](PASTE_YOUR_CV_URL_HERE) -->
 
 ---
 
