@@ -163,22 +163,25 @@ My current interests increasingly focus on applying AI techniques to problems in
 
 I am particularly interested in questions such as:
 
+**Software Engineering & AI**
 - How can AI improve software testing and debugging?
 - How can we evaluate the correctness of AI-generated code?
-- How can vulnerabilities in generated code be detected automatically?
-- How can static analysis tools catch security defects before code reaches production?
 - How can software engineering practices improve AI-enabled systems?
+
+**Software Security**
+- How can static analysis tools catch security defects before code reaches production?
+- How can vulnerabilities in AI-generated code be detected automatically?
+- How can AI and LLMs assist in vulnerability detection without overwhelming developers with false positives?
+- How can authentication, authorization, and access-control flaws be identified in real-world web APIs?
 - How can AI-assisted development remain secure and maintainable?
 
 ---
 
 ## 📊 GitHub Activity
 
-<sub>Most of my public repositories live on my other account, [@pro777oy](https://github.com/pro777oy).</sub>
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=saadkabiruddin&show_icons=true&hide_border=true)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=pro777oy&show_icons=true&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=pro777oy&layout=compact&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=saadkabiruddin&layout=compact&hide_border=true)
 
 ---
 
@@ -186,7 +189,6 @@ I am particularly interested in questions such as:
 
 - 🌐 [Portfolio Website](https://saadkabiruddin.github.io/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/saadkabiruddin)
-- 💻 [GitHub (projects)](https://github.com/pro777oy)
 <!-- - 🎓 [Google Scholar](PASTE_YOUR_SCHOLAR_URL_HERE) -->
 <!-- - 📄 [Curriculum Vitae](PASTE_YOUR_CV_URL_HERE) -->
 
