@@ -13,9 +13,8 @@ I also have academic research experience in **machine learning and computer visi
 ## 🔬 Research Interests
 
 - Software Engineering
-- AI for Software Engineering (AI4SE)
-- Software Engineering for AI (SE4AI)
 - Software Security
+- AI for Software Engineering (AI4SE)
 - AI for Security
 - Secure and Reliable AI-Assisted Software Systems
 - Software Architecture
