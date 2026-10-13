@@ -4,7 +4,7 @@
 
 I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
 
-My interests sit at the intersection of **Software Engineering, Artificial Intelligence, and Software Security**, with particular interest in building reliable, secure, and maintainable software systems.
+My interests sit at the intersection of **Software Engineering, Artificial Intelligence, and Software Security**, with particular interest in building reliable, secure, and maintainable software systems — including the security of LLM agents that act on users' behalf.
 
 I also have academic research experience in **machine learning and computer vision**, including biometric systems and medical image analysis.
 
@@ -16,6 +16,7 @@ I also have academic research experience in **machine learning and computer visi
 - Software Security
 - AI for Software Engineering (AI4SE)
 - AI for Security
+- Security of LLM Agents and AI Systems
 - Secure and Reliable AI-Assisted Software Systems
 - Software Architecture
 - Automated Testing and Program Analysis
@@ -65,11 +66,30 @@ My professional work focuses on designing and developing enterprise software sys
 ### AI / Machine Learning
 
 `PyTorch` `Deep Learning` `Computer Vision`  
-`Transfer Learning` `Image Processing` `Local LLMs`
+`Transfer Learning` `Image Processing` `Local LLMs` `Ollama`  
+`LLM Tool Calling`
 
 ---
 
 ## 🚀 Selected Projects
+
+### 🔹 [LLM Agent Security Gateway (AgentGuard)](https://github.com/saadkabiruddin/LlmAgentSecurityGateway)
+
+A security gateway that sits between an LLM agent and the tools it can call, and decides — independently of the model — whether each tool call is something the user is allowed to do **and** actually asked for.
+
+Built and evaluated on a local banking agent under prompt-injection attacks:
+
+- A **role-based check alone** blocked only 3 of 8 attacks from a hijacked agent — it could not stop unauthorized transfers, because the user *is* allowed to transfer money.
+- Adding **task-scope and argument-provenance checks** blocked **8 of 8**, with **no legitimate requests blocked**.
+
+**Key areas:**
+- LLM agent security and indirect prompt injection
+- Least privilege and task-scoped authorization
+- ASP.NET Core gateway with audit logging
+- Python agent on local LLMs (Ollama)
+- Experimental security evaluation
+
+---
 
 ### 🔹 .NET Security Analyzer (Roslyn) — *In Progress*
 
@@ -155,7 +175,7 @@ Research involving iris image processing, segmentation, biometric recognition, a
 
 Worked on deep-learning-based brain tumor classification using transfer learning and EfficientNet architectures.
 
-My current interests increasingly focus on applying AI techniques to problems in software engineering, security, testing, code analysis, and reliable software development.
+My current interests increasingly focus on applying AI techniques to problems in software engineering, security, testing, code analysis, and reliable software development — and on securing AI agents themselves.
 
 ---
 
@@ -174,6 +194,7 @@ I am particularly interested in questions such as:
 - How can AI and LLMs assist in vulnerability detection without overwhelming developers with false positives?
 - How can authentication, authorization, and access-control flaws be identified in real-world web APIs?
 - How can AI-assisted development remain secure and maintainable?
+- How can LLM agents that call tools be kept within what the user actually asked for, even when the model is manipulated?
 
 ---
 
