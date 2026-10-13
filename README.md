@@ -91,7 +91,7 @@ Built and evaluated on a local banking agent under prompt-injection attacks:
 
 ---
 
-### 🔹 .NET Security Analyzer (Roslyn) — *In Progress*
+### 🔹 [.NET Security Analyzer (Roslyn)](https://github.com/saadkabiruddin/RoslynSecurityAnalyzer)
 
 A software security research project in two stages:
 
