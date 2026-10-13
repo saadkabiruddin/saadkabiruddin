@@ -1,10 +1,10 @@
 # Hi, I'm Saad Kabir Uddin 👋
 
-**Software Engineer | Backend & Full-Stack Development | Software Engineering & AI**
+**Software Engineer | Software Security & AI for Software Engineering | Backend & Full-Stack Development**
 
 I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
 
-My interests sit at the intersection of **Software Engineering, Artificial Intelligence, and Software Security**, with particular interest in building reliable, secure, and maintainable software systems — including the security of LLM agents that act on users' behalf.
+My research interests center on **Software Security** — especially the security of LLM agents and AI-enabled systems — with **AI for Software Engineering (AI4SE)** as a close second. Both are grounded in my day-to-day experience building secure, reliable enterprise software.
 
 I also have academic research experience in **machine learning and computer vision**, including biometric systems and medical image analysis.
 
@@ -12,14 +12,13 @@ I also have academic research experience in **machine learning and computer visi
 
 ## 🔬 Research Interests
 
-- Software Engineering
 - Software Security
-- AI for Software Engineering (AI4SE)
-- AI for Security
 - Security of LLM Agents and AI Systems
+- AI for Security
+- AI for Software Engineering (AI4SE)
+- Program Analysis and Automated Testing
 - Secure and Reliable AI-Assisted Software Systems
-- Software Architecture
-- Automated Testing and Program Analysis
+- Software Engineering and Software Architecture
 
 ---
 
@@ -175,7 +174,7 @@ Research involving iris image processing, segmentation, biometric recognition, a
 
 Worked on deep-learning-based brain tumor classification using transfer learning and EfficientNet architectures.
 
-My current interests increasingly focus on applying AI techniques to problems in software engineering, security, testing, code analysis, and reliable software development — and on securing AI agents themselves.
+My current interests focus on software security — including securing AI agents themselves — and on applying AI to software engineering problems such as vulnerability detection, code analysis, and testing.
 
 ---
 
@@ -183,18 +182,18 @@ My current interests increasingly focus on applying AI techniques to problems in
 
 I am particularly interested in questions such as:
 
-**Software Engineering & AI**
-- How can AI improve software testing and debugging?
-- How can we evaluate the correctness of AI-generated code?
-- How can software engineering practices improve AI-enabled systems?
-
 **Software Security**
+- How can LLM agents that call tools be kept within what the user actually asked for, even when the model is manipulated?
 - How can static analysis tools catch security defects before code reaches production?
 - How can vulnerabilities in AI-generated code be detected automatically?
 - How can AI and LLMs assist in vulnerability detection without overwhelming developers with false positives?
 - How can authentication, authorization, and access-control flaws be identified in real-world web APIs?
 - How can AI-assisted development remain secure and maintainable?
-- How can LLM agents that call tools be kept within what the user actually asked for, even when the model is manipulated?
+
+**AI for Software Engineering**
+- How can AI improve software testing and debugging?
+- How can we evaluate the correctness of AI-generated code?
+- How can software engineering practices improve AI-enabled systems?
 
 ---
 
@@ -217,4 +216,4 @@ I am particularly interested in questions such as:
 
 ### Thanks for visiting 👋
 
-I enjoy building reliable software systems and exploring how software engineering, artificial intelligence, and security can work together to create better software.
+I enjoy building reliable software systems and exploring how security, artificial intelligence, and software engineering can work together to create safer software.
