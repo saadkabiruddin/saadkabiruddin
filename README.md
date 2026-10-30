@@ -1,10 +1,10 @@
 # Hi, I'm Saad Kabir Uddin 👋
 
-**Software Engineer | Software Security & AI for Software Engineering | Backend & Full-Stack Development**
+**Software Engineer | Software Security & Cyber-Physical Systems | Backend & Full-Stack Development**
 
 I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
 
-My research interests center on **Software Security** — especially the security of LLM agents and AI-enabled systems — with **AI for Software Engineering (AI4SE)** as a close second. Both are grounded in my day-to-day experience building secure, reliable enterprise software.
+My research interests center on **Software Security** — especially the security of LLM agents and AI-enabled systems — with **Cyber-Physical Systems (CPS)** as a close second. My security focus is grounded in my day-to-day experience building secure, reliable enterprise software.
 
 I also have academic research experience in **machine learning and computer vision**, including biometric systems and medical image analysis.
 
@@ -13,6 +13,7 @@ I also have academic research experience in **machine learning and computer visi
 ## 🔬 Research Interests
 
 - Software Security
+- Cyber-Physical Systems (CPS)
 - Security of LLM Agents and AI Systems
 - AI for Security
 - AI for Software Engineering (AI4SE)
