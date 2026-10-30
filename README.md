@@ -201,14 +201,6 @@ I am particularly interested in questions such as:
 
 ---
 
-## 📊 GitHub Activity
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=saadkabiruddin&show_icons=true&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=saadkabiruddin&layout=compact&hide_border=true)
-
----
-
 ## 🌐 Links
 
 - 🌐 [Portfolio Website](https://saadkabiruddin.github.io/)
