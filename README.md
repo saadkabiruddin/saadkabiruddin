@@ -1,6 +1,7 @@
 # Hi, I'm Saad Kabir Uddin 👋
 
-**Software Engineer | Software Security & Cyber-Physical Systems | Backend & Full-Stack Development**
+Software Engineer | Backend & Full-Stack Development
+Research interests: Software and Cyber-Physical Systems Security
 
 I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
 
