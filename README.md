@@ -1,7 +1,6 @@
 # Hi, I'm Saad Kabir Uddin 👋
 
-Software Engineer | Backend & Full-Stack Development
-Research interests: Software and Cyber-Physical Systems Security
+**Software Engineer | Software Security & Cyber-Physical Systems | Backend & Full-Stack Development**
 
 I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
 
@@ -186,16 +185,19 @@ I am particularly interested in questions such as:
 
 **Software Security**
 - How can LLM agents that call tools be kept within what the user actually asked for, even when the model is manipulated?
-- How can static analysis tools catch security defects before code reaches production?
-- How can vulnerabilities in AI-generated code be detected automatically?
-- How can AI and LLMs assist in vulnerability detection without overwhelming developers with false positives?
+- How can static analysis catch security defects — including those in AI-generated code — before they reach production?
+- How can AI assist vulnerability detection without overwhelming developers with false positives?
 - How can authentication, authorization, and access-control flaws be identified in real-world web APIs?
-- How can AI-assisted development remain secure and maintainable?
+
+**Cyber-Physical Systems Security**
+- As AI agents are given control over physical systems, how can their actions be bounded by both authorization and safety constraints?
+- How can malicious commands to industrial controllers be detected when they look like legitimate operations?
+- How can false data injection and sensor spoofing be distinguished from ordinary faults and noise?
+- How can software running on embedded and control systems be analyzed for vulnerabilities before deployment?
 
 **AI for Software Engineering**
 - How can AI improve software testing and debugging?
 - How can we evaluate the correctness of AI-generated code?
-- How can software engineering practices improve AI-enabled systems?
 
 ---
 
