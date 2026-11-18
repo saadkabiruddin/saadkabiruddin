@@ -1,215 +1,124 @@
 # Hi, I'm Saad Kabir Uddin 👋
 
-**Software Engineer | Software Security & Cyber-Physical Systems | Backend & Full-Stack Development**
+**Software Engineer | Embedded and Software Security | Cyber-Physical Systems**
 
-I am a software engineer working on enterprise and financial software systems, primarily using **C#, ASP.NET Core, Angular, SQL Server, and REST APIs**.
+I’m a software engineer at The Dhaka Mercantile Co-operative Bank Ltd., where I build and support enterprise financial systems. My work includes backend services, secure access controls, data reconciliation, case management, and integrations.
 
-My research interests center on **Software Security** — especially the security of LLM agents and AI-enabled systems — with **Cyber-Physical Systems (CPS)** as a close second. My security focus is grounded in my day-to-day experience building secure, reliable enterprise software.
+My technical interests include embedded and wireless firmware security, network and protocol security, cyber-physical and real-time systems, and program analysis.
 
-I also have academic research experience in **machine learning and computer vision**, including biometric systems and medical image analysis.
+## Research Interests
 
----
+- Embedded and wireless firmware security
+- Network and protocol security
+- Cyber-physical and real-time systems security
+- Program analysis
 
-## 🔬 Research Interests
+## What I Work On
 
-- Software Security
-- Cyber-Physical Systems (CPS)
-- Security of LLM Agents and AI Systems
-- AI for Security
-- AI for Software Engineering (AI4SE)
-- Program Analysis and Automated Testing
-- Secure and Reliable AI-Assisted Software Systems
-- Software Engineering and Software Architecture
-
----
-
-## 💻 What I Work On
-
-My professional work focuses on designing and developing enterprise software systems, including:
-
-- Financial and transactional software
+- Enterprise banking applications and workflows
 - Backend services and REST APIs
-- Authentication and authorization systems
-- Data reconciliation and processing systems
-- Case management applications
-- Database design and optimization
-- Integration between enterprise applications
-- Role-based access control and secure application workflows
+- Authentication, authorization, and access control
+- Reconciliation and data processing
+- Case management and system integration
+- Embedded security experiments and protocol defenses
+- Static analysis for application security
 
----
+## Technical Skills
 
-## 🛠️ Tech Stack
+**Systems Programming:** C, C++, Rust  
+**Programming Languages:** C#, Python, TypeScript, JavaScript  
+**Embedded:** ESP-IDF, FreeRTOS, MQTT, Wokwi  
+**Software and Data:** ASP.NET Core, FastAPI, Angular, EF Core, CQRS, JWT, SQL Server, PostgreSQL  
+**Tools and Platforms:** Git, Linux, AWS  
+**Machine Learning:** PyTorch, OpenCV, scikit-learn, Albumentations, Matplotlib, Pandas, NumPy
 
-### Languages
+## Selected Projects
 
-`C#` `Python` `SQL` `TypeScript` `JavaScript` `Java` `Go`
+### Replay Lock — Replay Protection as a Protocol-State Problem Across Restarts
 
-### Backend
+Compared unprotected, RAM-counter, and persistent-counter receivers under replay, modification, and restart scenarios. Identified that a RAM-held replay counter resets on restart, allowing previously captured messages to be accepted again when the receiver returns to an earlier state.
 
-`ASP.NET Core` `ASP.NET MVC` `.NET` `Entity Framework Core`  
-`REST APIs` `FastAPI` `JWT Authentication`
+- Only persistent counters rejected replay after restart in all 20 host trials.
+- Python and ESP32 firmware agreed on all 49 test inputs.
+- Hardware validation is pending.
 
-### Frontend
+### LoopShield — Sensor Spoofing Detection for Networked Control Systems
 
-`Angular` `HTML` `CSS` `JavaScript` `TypeScript`
+Built an MQTT attack proxy that injects bias, ramp, and forged messages into a simulated control loop, alongside a C# temperature-control simulation and local MQTT broker.
 
-### Database
+- Implemented portable C defenses using HMAC authentication, replay protection, a model observer, and CUSUM.
+- Evaluated four defense configurations across seven scenarios.
+- Combined defenses detected bias, ramp, and forgery within 0.2 seconds in preliminary host-based trials.
 
-`Microsoft SQL Server`
+### ESP32 FreeRTOS Priority Inversion Experiment
 
-### Software Engineering
+Built a C and ESP-IDF experiment in Wokwi to study priority inversion under task interference.
 
-`Clean Architecture` `CQRS` `MediatR`  
-`Dependency Injection` `Git` `API Integration`  
-`Authentication & Authorization` `Role-Based Access Control`
+- Mutex priority inheritance reduced lock wait from 339.3 ms to 89.7 ms.
+- Deadline misses dropped from 95/95 to 0/95 in the simulation.
+- Hardware validation is pending.
 
-### AI / Machine Learning
+### Roslyn Security Analyzer
 
-`PyTorch` `Deep Learning` `Computer Vision`  
-`Transfer Learning` `Image Processing` `Local LLMs` `Ollama`  
-`LLM Tool Calling`
+Built a C# Roslyn analyzer for ASP.NET Core Web APIs to detect SQL command text assembled through string concatenation or interpolation.
 
----
+- Detected 2 of 2 planted SQL injection cases.
+- Produced no warnings on three parameterized-query controls in a banking API benchmark.
 
-## 🚀 Selected Projects
+### LLM Agent Security Gateway — AgentGuard
 
-### 🔹 [LLM Agent Security Gateway (AgentGuard)](https://github.com/saadkabiruddin/LlmAgentSecurityGateway)
+Built an ASP.NET Core gateway for an Ollama banking agent, with role, scope, and provenance checks, deny-by-default policies, and audit logging.
 
-A security gateway that sits between an LLM agent and the tools it can call, and decides — independently of the model — whether each tool call is something the user is allowed to do **and** actually asked for.
+- In a simulated benchmark, blocked 8 of 8 unauthorized calls, compared with 3 of 8 using role-only checks.
+- Allowed all 3 legitimate calls.
 
-Built and evaluated on a local banking agent under prompt-injection attacks:
+### ML Backdoor Security Lab
 
-- A **role-based check alone** blocked only 3 of 8 attacks from a hijacked agent — it could not stop unauthorized transfers, because the user *is* allowed to transfer money.
-- Adding **task-scope and argument-provenance checks** blocked **8 of 8**, with **no legitimate requests blocked**.
+Reproduced BadNets-style poisoning on MNIST and evaluated fine-pruning as a mitigation.
 
-**Key areas:**
-- LLM agent security and indirect prompt injection
-- Least privilege and task-scoped authorization
-- ASP.NET Core gateway with audit logging
-- Python agent on local LLMs (Ollama)
-- Experimental security evaluation
+- Baseline results were 100% attack success and 99.00% clean accuracy.
+- Fine-pruning 90% of the final convolutional layer reduced attack success to 50.06%, with 97.90% clean accuracy.
 
----
+## Research Experience
 
-### 🔹 [.NET Security Analyzer (Roslyn)](https://github.com/saadkabiruddin/RoslynSecurityAnalyzer)
+### Undergraduate Researcher — Universiti Teknologi Malaysia  
+**September 2022 – September 2023**
 
-A software security research project in two stages:
+Researched iris recognition in less cooperative environments, including blur, off-angle gaze, uneven lighting, occlusion, and half-open eyes.
 
-1. **Vulnerable target API** — a deliberately insecure ASP.NET Core banking-style API with hand-planted vulnerabilities, built as a realistic test target.
-2. **Roslyn security analyzer** — a static analysis tool built on the .NET Compiler Platform (Roslyn) that aims to detect those vulnerability patterns directly in C# source code.
+- Implemented a 1.9-million-parameter U-Net for iris segmentation using PyTorch.
+- Worked with the CASIA-Iris-Degradation database, Albumentations, and OpenCV.
+- Evaluated segmentation using IoU, loss, and visual comparisons.
 
-**Key areas:**
-- ASP.NET Core Web API
-- Secure coding and common web vulnerability classes
-- Static program analysis
-- Roslyn analyzers (C# syntax trees and semantic models)
+## Publications
 
-The goal is to explore how automated analysis can catch security defects earlier in the development process.
+- Uddin, Saad Kabir, and Sim Hiew Moi. “Improving the Methods of Iris Recognition in Less Cooperative Environments.” *UTM Computing Proceedings: Innovations in Computing Technology and Applications*, vol. 6, 2024, pp. 71–76.
+- Yong, Pang Yee, Saad Kabir Uddin, and Sim Hiew Moi. “Enhancing Iris Recognition in Less Cooperative Environments.” In *Frontiers in Image Processing and Computer Vision*, chapter 4, pp. 47–60. UTM Press, 2025.
 
----
+## Professional Experience
 
-### 🔹 RecWiz — Reconciliation Wizard
+### Software Engineer (Senior Technical Officer) — The Dhaka Mercantile Co-operative Bank Ltd.  
+**November 2024 – Present**
 
-An enterprise reconciliation platform designed for processing and comparing large financial datasets.
+Work on enterprise banking applications, including secure access control, case management, reconciliation, core banking modules, and internal service integrations.
 
-**Key areas:**
-- ASP.NET Core Web API
-- Angular
-- SQL Server
-- CQRS and MediatR
-- Batch data processing
-- JWT authentication
-- Modular application architecture
+### Software Developer Intern — BigLedger Sdn Bhd (Cloud App Software Solutions)  
+**September 2023 – February 2024**
 
----
+Developed ERP functionality with Java, Spring Boot, and Angular. Investigated PostgreSQL data issues, supported AWS operations, and troubleshot production problems.
 
-### 🔹 Case Management Application
+## Awards and Achievements
 
-Enterprise case management software designed to support structured workflows, reporting, and integration with external financial systems.
+- Dean’s List, Semester II 2019/2020 and Semester I 2022/2023 — School of Computing, Universiti Teknologi Malaysia.
+- International Assessments for Schools, Science — High Distinction, Class 9, 2013.
+- International Assessments for Schools, Mathematics — Distinction, Class 9, 2013.
+- 3rd Place, Rubik’s Cube Competition — Citycell–SGHS Knowledge Fiesta 2014.
+- Medalist in 400 m relay and football competitions.
 
-**Key areas:**
-- Database schema design
-- REST API development
-- Role-based access control
-- External API integration
-- Reporting workflows
-- Enterprise data management
+## Links
 
----
-
-### 🔹 AI Assistant
-
-An experimental full-stack AI assistant using local large language models.
-
-**Technologies:**
-- FastAPI
-- Angular
-- Ollama
-- Local LLMs
-- Python
-
-The project explores integrating modern AI capabilities into conventional software applications.
-
----
-
-### 🔹 DeliveryDash
-
-A small 2D game project developed with Unity and published for the web.
-
-**Technologies:**
-- Unity
-- C#
-- WebGL
-
----
-
-## 📚 Research Experience
-
-My academic research background includes machine learning, computer vision, and image processing.
-
-### Iris Recognition and Segmentation
-
-Research involving iris image processing, segmentation, biometric recognition, and deep-learning-based approaches for non-ideal iris images.
-
-### Brain Tumor Detection from MRI
-
-Worked on deep-learning-based brain tumor classification using transfer learning and EfficientNet architectures.
-
-My current interests focus on software security — including securing AI agents themselves — and on applying AI to software engineering problems such as vulnerability detection, code analysis, and testing.
-
----
-
-## 🧠 Areas I'm Exploring
-
-I am particularly interested in questions such as:
-
-**Software Security**
-- How can LLM agents that call tools be kept within what the user actually asked for, even when the model is manipulated?
-- How can static analysis catch security defects — including those in AI-generated code — before they reach production?
-- How can AI assist vulnerability detection without overwhelming developers with false positives?
-- How can authentication, authorization, and access-control flaws be identified in real-world web APIs?
-
-**Cyber-Physical Systems Security**
-- As AI agents are given control over physical systems, how can their actions be bounded by both authorization and safety constraints?
-- How can malicious commands to industrial controllers be detected when they look like legitimate operations?
-- How can false data injection and sensor spoofing be distinguished from ordinary faults and noise?
-- How can software running on embedded and control systems be analyzed for vulnerabilities before deployment?
-
-**AI for Software Engineering**
-- How can AI improve software testing and debugging?
-- How can we evaluate the correctness of AI-generated code?
-
----
-
-## 🌐 Links
-
-- 🌐 [Portfolio Website](https://saadkabiruddin.github.io/)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/saadkabiruddin)
-<!-- - 🎓 [Google Scholar](PASTE_YOUR_SCHOLAR_URL_HERE) -->
-<!-- - 📄 [Curriculum Vitae](PASTE_YOUR_CV_URL_HERE) -->
-
----
-
-### Thanks for visiting 👋
-
-I enjoy building reliable software systems and exploring how security, artificial intelligence, and software engineering can work together to create safer software.
+- [Portfolio](https://saadkabiruddin.github.io/)
+- [GitHub](https://github.com/saadkabiruddin)
+- [LinkedIn](https://www.linkedin.com/in/saadkabiruddin/)
+- [Google Scholar](https://scholar.google.com/citations?user=wttp814AAAAJ&hl=en&authuser=1)
+- [ORCID](https://orcid.org/0009-0005-3966-5020)
